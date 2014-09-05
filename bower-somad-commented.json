@@ -1,0 +1,72 @@
+//
+// bower-somad-commented.json
+// 
+// Note that you can't really have comments in JSON! This file is just for
+// reference. 
+
+// To actually add these dependencies to your own app:
+// Copy and edit bower-somad.json; 
+// Rename it to bower.json;
+// Run `bower install`.
+
+{
+  // The name of your package is by convention the same as the repo name
+  "name": "sopro-material-design",
+
+  // Use SemVer conventions, Major.Minor.Bugfix-RC4 
+  // where major updates break lesser versions and minor updates are backwards-compatible.
+  "version": "0.1.0", 
+  "authors": [
+    // Emails or git usernames are fine here
+    "SocietyPro"
+  ],
+  "description": "A skeleton bower file to edit for your app",
+  "main": "index.html",
+  "license": "MIT",
+
+  // The github repo is a fine default homepage
+  "homepage": "https://github.com/sopro-components/material-bowers",
+
+  // Bower's default ignore list
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+
+  // The meat of the skeleton file!
+  "dependencies": {
+    "jquery": "~2.1.1",
+
+    // japi is SoPro's Javascript API. 
+    // It can talk to Society Pro if your app is runnning in Society Pro. 
+    // Otherwise, you can use it for mock objects.
+    "japi": "https://github.com/SocietyPro/japi.git",
+
+    // Note! If you want github as an endpoint, only use https://... not git@...
+    // Some users don't have ssh keys, so they cannot resolve git@github.com:... references
+
+    // Angular's Material Design components, which SoPro is using as a
+    // framework, requires angular >=1.3.0
+    "angular": "1.3.0-beta.19",
+    "angular-animate": "1.3.0-beta.19",
+    "angular-route": "1.x",
+
+    // sopro-material is our fork of angular/material
+    // it contains angular's components and our own components
+    // Versions will be in flux as angular/material is under development
+    "sopro-material": "https://github.com/sopro-components/sopro-material.git#0.1.0",
+
+    // sopro-material-styles includes our universal css styles
+    // "sopro-material-styles": "https://github.com/sopro-components/sopro-material-styles.git",
+    // This repo is being moved into sopro-material
+
+    // roboto is our repo containing roboto fonts
+    "roboto": "https://github.com/sopro-components/roboto.git"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.x"
+  }
+}
